@@ -1,0 +1,11 @@
+#ifndef UNITTEST_HEADER_FILE
+#define UNITTEST_HEADER_FILE
+
+#if (ENABLE_TESTS)
+    #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+#else
+    #define DOCTEST_CONFIG_DISABLE
+#endif
+#include "doctest.h"
+
+#endif // UNITTEST_HEADER_FILE
